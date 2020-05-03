@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="width: 100%;">
+        <img src="./img/展区.jpg" alt="" style="width: 100%;">
+        <ul class="nav" style="top: 16%;
+        position: absolute;
+        display: flex;">
+            <a href="#">列1</a>
+            <ul class="plat">
+                <li><a href="#">aa</a></li>
+                <li><a href="#">bb</a></li>
+                <li><a href="#">cc</a></li>
+            </ul>
+        </ul>
+        <ul class="nav" style="top: 16%;left: 76%;
+        position: absolute;
+        display: flex;">
+            <a href="#">列2</a>
+            <ul class="plat">
+                <li><a href="#">dd</a></li>
+                <li><a href="#">ee</a></li>
+                <li><a href="#">ff</a></li>
+            </ul>
+        </ul>
+        <ul class="nav" style="top: 36%;
+        position: absolute;
+        display: flex;">
+            <a href="#">列3</a>
+            <ul class="plat">
+                <li><a href="#">gg</a></li>
+                <li><a href="#">hh</a></li>
+                <li><a href="#">ii</a></li>
+            </ul>
+        </ul>
+        <ul class="nav" style="top: 36%; left: 76%;
+        position: absolute;
+        display: flex;">
+            <a href="#">列4</a>
+            <ul class="plat">
+                <li><a href="#">jj</a></li>
+                <li><a href="#">kk</a></li>
+                <li><a href="#">ll</a></li>
+            </ul>
+        </ul>
+    </div>
+</body>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    ul,a{
+        font-size: 20px;
+        list-style: none;
+        text-decoration: none;
+        background-color: #3C3C3C;
+        color: #FFFFFF;
+        width: 100px;
+        text-align: center;
+        border: 0px solid black;
+        border-radius: 5px;
+        margin-top: 1px;
+    }
+    a{
+        display: block;
+    }
+
+    .plat{
+        display: none;
+    }
+    .nav{
+        float: left;
+        margin-left: 1px;
+        }
+    .nav:hover .plat{
+        display: block;
+        clear: both;
+    }
+    .plat li:hover>a{
+        background-color: dimgrey;
+    }
+</style>
+</html>
